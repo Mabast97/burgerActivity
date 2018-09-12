@@ -1,0 +1,141 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: whitesmoke
+}
+
+#myNav
+{
+    background-color: blue;
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#rightNav
+{
+    display: flex;
+}
+
+#myNav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px;
+    display: block;
+}
+
+#myNav a:hover{
+    color: black;
+    background-color: cornsilk;
+}
+
+.logo
+{
+    font-size: 4em;
+    margin-left: 40%;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 9px;
+}
+
+.icon
+{
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+}
+
+.aside 
+{
+    position: absolute;
+    background-color: lightblue;
+    width: 25%;
+    height: 99%;
+    z-index: 1;
+}
+
+.aside a
+{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    font-size: 1.4em;
+    border-bottom: 1px solid black;
+}
+
+.aside a:hover{
+    font-size: 1.4em;
+    font-weight: bolder;
+}
+
+.hide
+{
+    display: none;
+}
+
+.margin_left
+{
+    margin-left: 25%;    
+    transition: all 0.5s ;
+}
+
+.resIcon
+{
+    font-size: 2em;
+    margin: 20% 0 0 60%;
+    cursor: pointer;
+    display: none;
+   
+}
+
+.resIcon:hover{
+    font-size: 2.4em;
+    color: darkblue;  
+}
+
+.image 
+{
+    margin: 20px 0;
+    border: 2px solid gray;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 700px)
+{
+    .aside a {
+        font-size: 1.1em;
+    }
+    .margin_left
+    {
+        margin-left: 0;
+        opacity: 0.4;
+    }
+
+    .resIcon
+    {
+        display: block;
+    }
+
+    .logo
+{
+    font-size: 3.5em;
+    margin-left: 35%;
+}
+
+.aside a:hover{
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+
+}
